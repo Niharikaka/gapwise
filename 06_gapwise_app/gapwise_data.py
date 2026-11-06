@@ -185,6 +185,46 @@ def verdict(sector: str, audience: str, need: str, level_min: int, level_max: in
 
 
 IDEAS = GAPWISE / "ideas.json"
+SECTOR_DEPTH = GAPWISE / "sector_depth.csv"
+# Depth suggestion from the industry's own AI job ads (refined labels, AI Depth Ladder L1-L5).
+# Build when integration-and-above work (L3-L5) is at least the all-AI-jobs average (40%);
+# Understand when at least 60% of the industry's AI ads ask only for awareness (L1); otherwise Use.
+BUILD_SHARE, AWARE_SHARE = 0.40, 0.60
+
+
+def sector_depth(sector: str) -> dict | None:
+    """Share of an industry's AI job ads at each depth level, or None if not precomputed."""
+    if not SECTOR_DEPTH.exists():
+        return None
+    d = pd.read_csv(SECTOR_DEPTH).set_index("sector")
+    return d.loc[sector].to_dict() if sector in d.index else None
+
+
+def suggest_depth(sector: str) -> tuple[str, dict | None]:
+    """Suggested depth tile (understand / use / build) for an industry, and the mix behind it."""
+    m = sector_depth(sector)
+    if not m:
+        return "use", None
+    high = m["L3"] + m["L4"] + m["L5"]
+    key = "build" if high >= BUILD_SHARE else ("understand" if m["L1"] >= AWARE_SHARE else "use")
+    return key, dict(m, high=high)
+
+
+def build_depth():
+    """Depth mix of each industry's AI job ads (strict labels), for the depth suggestion."""
+    from data import load_jobs
+    j = load_jobs()[["record_id", "Category"]].merge(
+        pd.read_csv(OUTPUT / "job_labels.csv", usecols=["record_id", "strict_ai", "maturity"]), on="record_id")
+    j = j[j.strict_ai.astype(bool) & j.maturity.between(1, 5)]
+    j["sector"] = j.Category.fillna("").str.split("; ")
+    j = j.explode("sector")
+    j = j[j.sector.isin(sectors().sector)]
+    d = j.groupby("sector").maturity.value_counts(normalize=True).unstack(fill_value=0)
+    d = d.reindex(columns=range(1, 6), fill_value=0)
+    d.columns = [f"L{c}" for c in d.columns]
+    d.insert(0, "ai_jobs", j.groupby("sector").size())
+    d.reset_index().to_csv(SECTOR_DEPTH, index=False)
+    print(f"depth mix for {len(d)} industries")
 
 
 def ideas(sector: str, limit: int = 3) -> list[dict]:
@@ -389,6 +429,7 @@ def build():
     c[["record_id", "title", "base_title", "provider_name", "source", "hours", "attendance", "industry", *FOCUS_SKILLS]].to_csv(GAPWISE / "course_skills.csv", index=False)
     print(f"radar sectors {len(r)}, AI courses {len(c)}")
     build_ideas()
+    build_depth()
 
 
 def build_ideas():
@@ -403,5 +444,7 @@ if __name__ == "__main__":
         build()
     elif sys.argv[1:] == ["ideas"]:
         build_ideas()
+    elif sys.argv[1:] == ["depth"]:
+        build_depth()
     else:
         print(__doc__)

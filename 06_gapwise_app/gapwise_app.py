@@ -294,6 +294,7 @@ def understood():
     names = sector_names()
     guess = guess_sector(text)
     st.session_state.pop("sector", None)
+    st.session_state.pop("depth_picked", None)
     st.session_state.update(sector_val=guess if guess in names else names[0], sector_guessed=guess in names,
                             learners_val=o.guess_learners(text), depth_val=o.guess_depth(text), screen="path")
 
@@ -322,7 +323,7 @@ def ideas_screen():
 
 
 def use_idea(sector, name, what):
-    for k in ("mode", "text", "sector", "learners", "depth"):
+    for k in ("mode", "text", "sector", "learners", "depth", "depth_picked"):
         st.session_state.pop(k, None)
     st.session_state.update(mode_val="A new course idea", mode="A new course idea", text_val=f"{name}. {what}", sector_val=sector,
                             sector_guessed=True, learners_val="working professionals", depth_val="use", screen="who")
@@ -353,6 +354,8 @@ def title(heading, sub):
 
 def pick(**kw):
     st.session_state.update({k + "_val": v for k, v in kw.items()})
+    if "depth" in kw:
+        st.session_state.depth_picked = True
 
 
 def row_card(n, name, sub, badge, badge_style, colour, chosen=False):
@@ -422,9 +425,24 @@ def leave_who(custom):
 
 def depth_screen():
     progress_bar(2)
-    best = o.guess_depth(st.session_state.text_val)
-    title("How deep should it go?", f"We suggest <strong>{DEPTH_TILES[best][0]}</strong> from your description. "
-          "Job ads ask for using and integrating AI far more often than courses teach it.")
+    s = st.session_state
+    # The user's own words win; otherwise the industry's AI job ads decide (see gapwise_data.suggest_depth).
+    words = o.guess_depth(s.text_val, default="")
+    evidence, mix = g.suggest_depth(s.sector_val)
+    best = words or evidence
+    if not s.get("depth_picked"):
+        s.depth_val = best
+    name, work = DEPTH_TILES[best][0], esc(o.work_word(s.sector_val))
+    if words or not mix:
+        why = f"We suggest <strong>{name}</strong> from your description."
+    elif best == "build":
+        why = f"We suggest <strong>{name}</strong>: {mix['high']:.0%} of {work} AI job ads ask people to integrate, build or run AI (L3–L5)."
+    elif best == "understand":
+        why = f"We suggest <strong>{name}</strong>: {mix['L1']:.0%} of {work} AI job ads ask only for awareness of AI (L1)."
+    else:
+        why = (f"We suggest <strong>{name}</strong>: most {work} AI job ads ask people to apply AI tools; "
+               f"{mix['high']:.0%} go as far as integrating or building it (L3–L5).")
+    title("How deep should it go?", why + " You can choose another level.")
     _, mid, _ = st.columns([1, 3.4, 1])
     with mid:
         cols = st.columns(3)
@@ -512,7 +530,27 @@ def coming_card(h, work):
        f'<div style="font-size:.8rem;color:{MUTED};margin-top:12px">A forward-looking signal, not current demand.</div></div>')
 
 
-def courses_section(facts, route, mode):
+MORE_COURSES = 100
+
+
+def more_courses(rest):
+    """Every other relevant course (same matching and cut-off as the cards), as a compact table."""
+    if not rest:
+        return
+    cap = " (the closest 100)" if len(rest) + 5 >= MORE_COURSES else ""
+    with st.expander(f"Show all {len(rest) + 5} relevant courses{cap}"):
+        rows = [{"Course": f["title"], "Provider": f["provider"], "Source": f["source"],
+                 "Hours": f["hours"] if f["hours"] == f["hours"] and f["hours"] else None,
+                 "Fee (SGD)": f["fee"] if f["fee"] == f["fee"] and f["fee"] else None,
+                 "Uses AI": "Yes" if f["has_ai"] else "No", "Advice": f["advice"],
+                 "Skills in outcomes": ", ".join(o.PLAIN_SKILL.get(k, k) for k, v in f["skills"].items() if v == "outcomes") or "–"}
+                for f in rest]
+        st.dataframe(pd.DataFrame(rows), hide_index=True, use_container_width=True,
+                     column_config={"Hours": st.column_config.NumberColumn(format="%.0f"), "Fee (SGD)": st.column_config.NumberColumn(format="%.0f")})
+        st.caption("Ranked by text similarity to your description, after the five shown above. Same matching rules as the cards.")
+
+
+def courses_section(facts, route, mode, rest=()):
     lab, why = route
     md(f'<div style="margin:40px 0 6px"><div class="gw-eyebrow">From the course database</div>'
        f'<div style="font-weight:800;font-size:2rem;letter-spacing:-.045em">{"Courses like yours" if mode == "existing" else "Courses already out there"}</div>'
@@ -542,6 +580,7 @@ def courses_section(facts, route, mode):
                 for u in f["outcomes"]:
                     st.markdown(f"- {u}")
                 st.caption(f"Source record {f['record_id']}, as published in the catalogue.")
+    more_courses(list(rest))
     st.caption("✓ named in its learning outcomes · ~ only in its description · ✗ not found. Matching is by text similarity and keywords: "
                "it does not show how deeply a course teaches something. Check the full syllabus before deciding.")
 
@@ -588,8 +627,8 @@ def rewrite_panel(objs, text, learners, work):
 
 
 @st.cache_data(show_spinner=False)
-def cached_facts(text, skills, mode, sector):
-    return g.course_facts(text, list(skills), mode, sector=sector)
+def cached_facts(text, skills, mode, sector, limit=5):
+    return g.course_facts(text, list(skills), mode, limit=limit, sector=sector)
 
 
 def result_screen():
@@ -610,7 +649,9 @@ def result_screen():
             p = g.new_path(sector)
             objs = o.for_new_course(sector, depth, v, p["open"], p["counts"], p["ai_courses"], h["ahead_tasks"])
             skills = tuple(dict.fromkeys([*v["skills"], *p["open"]]))
-        facts = cached_facts(text, skills, "existing" if existing else "new", sector)
+        # The top five drive the verdict text and overlap checks; the rest are listed for browsing.
+        all_facts = cached_facts(text, skills, "existing" if existing else "new", sector, MORE_COURSES)
+        facts = all_facts[:5]
     objs = rewritten(objs, text)
     # The generic baseline is judged on wording only; its key ideas appear in almost any AI course.
     overlap = g.objective_overlap([x["text"] for x in objs], facts, [[] if x["tag"] == o.ALL else x.get("anchors", []) for x in objs])
@@ -670,7 +711,7 @@ def result_screen():
     a, b, _ = st.columns([1.3, 1, 2])
     a.download_button("Download objectives", plain, file_name="learning_objectives.txt", type="primary", use_container_width=True)
     b.button("Start again", use_container_width=True, on_click=restart)
-    courses_section(facts, g.route(facts, "existing" if existing else "new"), "existing" if existing else "new")
+    courses_section(facts, g.route(facts, "existing" if existing else "new"), "existing" if existing else "new", all_facts[5:])
     steps = ["Read job ads", "Compared 38,630 courses", "Looked ahead"] + ([] if existing else ["Ran 6 checks"]) + ["Matched published outcomes"]
     md('<div class="gw-card" style="padding:18px 22px;margin-top:28px;display:flex;align-items:center;flex-wrap:wrap;gap:6px">'
        '<strong style="margin-right:8px">How Gapwise decided</strong>' + "".join(f'<span class="gw-step-chip">{x}</span>' for x in steps) + "</div>")
@@ -732,7 +773,7 @@ def radar_screen():
 
 def from_radar(sector, h):
     idea = h["ahead_tasks"][0]["addon"] if h["ahead_tasks"] else f"AI for {o.work_word(sector)} work"
-    for k in ("mode", "text", "sector", "learners", "depth"):
+    for k in ("mode", "text", "sector", "learners", "depth", "depth_picked"):
         st.session_state.pop(k, None)
     st.session_state.update(mode_val="A new course idea", mode="A new course idea", text_val=f"A course on {idea[:1].lower() + idea[1:]} for {o.work_word(sector)} teams",
                             sector_val=sector, sector_guessed=True, learners_val="working professionals", depth_val="use", screen="path")

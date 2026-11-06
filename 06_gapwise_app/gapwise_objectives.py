@@ -96,13 +96,14 @@ def work_word(sector: str) -> str:
     return WORK.get(sector, re.sub(r"\s*/.*", "", sector).lower())
 
 
-def guess_depth(text: str) -> str:
+def guess_depth(text: str, default: str = "use") -> str:
+    """Depth the user's own words ask for; `default` (the industry evidence) when they name none."""
     t = text.lower()
     if re.search(r"\b(build|develop|code|coding|python|program|engineer|deploy|train (?:a|the) model)", t):
         return "build"
     if re.search(r"\b(awareness|introduc|basics|literacy|understand|overview|non-technical)", t):
         return "understand"
-    return "use"
+    return default
 
 
 LEARNER_PATTERNS = [r"\bfor ([a-z][a-z &/-]{2,40}?)(?:\s+(?:to|who|on|in|about|with|so)\b|[,.]|$)",
