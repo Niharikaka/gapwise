@@ -1,0 +1,1311 @@
+{
+ "Information Technology": [
+  {
+   "concept": "Production AI reliability and monitoring",
+   "key": "production",
+   "skills": [
+    "MLOps",
+    "Cloud",
+    "Python"
+   ],
+   "levels": [
+    4,
+    5
+   ],
+   "jobs": 1256,
+   "intent": "ML software engineers deploy operate monitor production AI models cloud model serving incident recovery rollback reliability drift performance"
+  },
+  {
+   "concept": "AI-assisted data analysis and forecasting",
+   "key": "analytics",
+   "skills": [
+    "Machine learning",
+    "Python",
+    "SQL"
+   ],
+   "levels": [
+    2,
+    3
+   ],
+   "jobs": 1203,
+   "intent": "Analysts business operations teams clean analyse data dashboards reporting forecast sales demand trends customer segmentation insights spreadsheets decision making"
+  },
+  {
+   "concept": "Generative AI for everyday business work",
+   "key": "productivity",
+   "skills": [
+    "Generative AI",
+    "LLM",
+    "AI agents"
+   ],
+   "levels": [
+    1,
+    2
+   ],
+   "jobs": 827,
+   "intent": "Non-technical staff executives administrators sales marketing HR teams use generative AI assistants copilots to draft summarise write reports emails proposals presentations content prompts review outputs everyday productivity"
+  }
+ ],
+ "Engineering": [
+  {
+   "concept": "Production AI reliability and monitoring",
+   "key": "production",
+   "skills": [
+    "MLOps",
+    "Cloud",
+    "Python"
+   ],
+   "levels": [
+    4,
+    5
+   ],
+   "jobs": 420,
+   "intent": "ML software engineers deploy operate monitor production AI models cloud model serving incident recovery rollback reliability drift performance"
+  },
+  {
+   "concept": "AI-assisted data analysis and forecasting",
+   "key": "analytics",
+   "skills": [
+    "Machine learning",
+    "Python",
+    "SQL"
+   ],
+   "levels": [
+    2,
+    3
+   ],
+   "jobs": 493,
+   "intent": "Analysts business operations teams clean analyse data dashboards reporting forecast sales demand trends customer segmentation insights spreadsheets decision making"
+  },
+  {
+   "concept": "Predictive decision support and model evaluation",
+   "key": "prediction",
+   "skills": [
+    "Machine learning",
+    "Python",
+    "Data engineering"
+   ],
+   "levels": [
+    3,
+    4
+   ],
+   "jobs": 487,
+   "intent": "Engineers analysts operations teams predictive maintenance risk scoring evaluate predictive models data validation failure detection operational constraints baseline error analysis"
+  }
+ ],
+ "Marketing / Public Relations": [
+  {
+   "concept": "Generative AI for everyday business work",
+   "key": "productivity",
+   "skills": [
+    "Generative AI",
+    "LLM",
+    "AI agents"
+   ],
+   "levels": [
+    1,
+    2
+   ],
+   "jobs": 57,
+   "intent": "Non-technical staff executives administrators sales marketing HR teams use generative AI assistants copilots to draft summarise write reports emails proposals presentations content prompts review outputs everyday productivity"
+  },
+  {
+   "concept": "AI assurance and governance review",
+   "key": "assurance",
+   "skills": [
+    "Responsible AI",
+    "Generative AI",
+    "LLM"
+   ],
+   "levels": [
+    1,
+    2
+   ],
+   "jobs": 57,
+   "intent": "Managers consultants risk compliance officers review AI use cases governance policy privacy bias controls accountability approval responsible business adoption"
+  },
+  {
+   "concept": "Bounded AI workflow and tool integration",
+   "key": "workflow",
+   "skills": [
+    "AI agents",
+    "LLM",
+    "RAG"
+   ],
+   "levels": [
+    3
+   ],
+   "jobs": 26,
+   "intent": "Software engineers technical teams integrate AI agents tools document retrieval assistants into internal workflows automation stop conditions approval recover failed calls"
+  }
+ ],
+ "Banking and Finance": [
+  {
+   "concept": "AI-assisted data analysis and forecasting",
+   "key": "analytics",
+   "skills": [
+    "Machine learning",
+    "Python",
+    "SQL"
+   ],
+   "levels": [
+    2,
+    3
+   ],
+   "jobs": 120,
+   "intent": "Analysts business operations teams clean analyse data dashboards reporting forecast sales demand trends customer segmentation insights spreadsheets decision making"
+  },
+  {
+   "concept": "Production AI reliability and monitoring",
+   "key": "production",
+   "skills": [
+    "MLOps",
+    "Cloud",
+    "Python"
+   ],
+   "levels": [
+    4,
+    5
+   ],
+   "jobs": 104,
+   "intent": "ML software engineers deploy operate monitor production AI models cloud model serving incident recovery rollback reliability drift performance"
+  },
+  {
+   "concept": "Generative AI for everyday business work",
+   "key": "productivity",
+   "skills": [
+    "Generative AI",
+    "LLM",
+    "AI agents"
+   ],
+   "levels": [
+    1,
+    2
+   ],
+   "jobs": 70,
+   "intent": "Non-technical staff executives administrators sales marketing HR teams use generative AI assistants copilots to draft summarise write reports emails proposals presentations content prompts review outputs everyday productivity"
+  }
+ ],
+ "Consulting": [
+  {
+   "concept": "Generative AI for everyday business work",
+   "key": "productivity",
+   "skills": [
+    "Generative AI",
+    "LLM",
+    "AI agents"
+   ],
+   "levels": [
+    1,
+    2
+   ],
+   "jobs": 85,
+   "intent": "Non-technical staff executives administrators sales marketing HR teams use generative AI assistants copilots to draft summarise write reports emails proposals presentations content prompts review outputs everyday productivity"
+  },
+  {
+   "concept": "Production AI reliability and monitoring",
+   "key": "production",
+   "skills": [
+    "MLOps",
+    "Cloud",
+    "Python"
+   ],
+   "levels": [
+    4,
+    5
+   ],
+   "jobs": 105,
+   "intent": "ML software engineers deploy operate monitor production AI models cloud model serving incident recovery rollback reliability drift performance"
+  },
+  {
+   "concept": "Bounded AI workflow and tool integration",
+   "key": "workflow",
+   "skills": [
+    "AI agents",
+    "LLM",
+    "RAG"
+   ],
+   "levels": [
+    3
+   ],
+   "jobs": 63,
+   "intent": "Software engineers technical teams integrate AI agents tools document retrieval assistants into internal workflows automation stop conditions approval recover failed calls"
+  }
+ ],
+ "Sciences / Laboratory / R&D": [
+  {
+   "concept": "AI-assisted data analysis and forecasting",
+   "key": "analytics",
+   "skills": [
+    "Machine learning",
+    "Python",
+    "SQL"
+   ],
+   "levels": [
+    2,
+    3
+   ],
+   "jobs": 155,
+   "intent": "Analysts business operations teams clean analyse data dashboards reporting forecast sales demand trends customer segmentation insights spreadsheets decision making"
+  },
+  {
+   "concept": "Production AI reliability and monitoring",
+   "key": "production",
+   "skills": [
+    "MLOps",
+    "Cloud",
+    "Python"
+   ],
+   "levels": [
+    4,
+    5
+   ],
+   "jobs": 126,
+   "intent": "ML software engineers deploy operate monitor production AI models cloud model serving incident recovery rollback reliability drift performance"
+  },
+  {
+   "concept": "Predictive decision support and model evaluation",
+   "key": "prediction",
+   "skills": [
+    "Machine learning",
+    "Python",
+    "Data engineering"
+   ],
+   "levels": [
+    3,
+    4
+   ],
+   "jobs": 155,
+   "intent": "Engineers analysts operations teams predictive maintenance risk scoring evaluate predictive models data validation failure detection operational constraints baseline error analysis"
+  }
+ ],
+ "Sales / Retail": [
+  {
+   "concept": "Generative AI for everyday business work",
+   "key": "productivity",
+   "skills": [
+    "Generative AI",
+    "LLM",
+    "AI agents"
+   ],
+   "levels": [
+    1,
+    2
+   ],
+   "jobs": 27,
+   "intent": "Non-technical staff executives administrators sales marketing HR teams use generative AI assistants copilots to draft summarise write reports emails proposals presentations content prompts review outputs everyday productivity"
+  },
+  {
+   "concept": "AI assurance and governance review",
+   "key": "assurance",
+   "skills": [
+    "Responsible AI",
+    "Generative AI",
+    "LLM"
+   ],
+   "levels": [
+    1,
+    2
+   ],
+   "jobs": 19,
+   "intent": "Managers consultants risk compliance officers review AI use cases governance policy privacy bias controls accountability approval responsible business adoption"
+  },
+  {
+   "concept": "Production AI reliability and monitoring",
+   "key": "production",
+   "skills": [
+    "MLOps",
+    "Cloud",
+    "Python"
+   ],
+   "levels": [
+    4,
+    5
+   ],
+   "jobs": 31,
+   "intent": "ML software engineers deploy operate monitor production AI models cloud model serving incident recovery rollback reliability drift performance"
+  }
+ ],
+ "Manufacturing": [
+  {
+   "concept": "AI-assisted data analysis and forecasting",
+   "key": "analytics",
+   "skills": [
+    "Machine learning",
+    "Python",
+    "SQL"
+   ],
+   "levels": [
+    2,
+    3
+   ],
+   "jobs": 87,
+   "intent": "Analysts business operations teams clean analyse data dashboards reporting forecast sales demand trends customer segmentation insights spreadsheets decision making"
+  },
+  {
+   "concept": "Production AI reliability and monitoring",
+   "key": "production",
+   "skills": [
+    "MLOps",
+    "Cloud",
+    "Python"
+   ],
+   "levels": [
+    4,
+    5
+   ],
+   "jobs": 62,
+   "intent": "ML software engineers deploy operate monitor production AI models cloud model serving incident recovery rollback reliability drift performance"
+  },
+  {
+   "concept": "Predictive decision support and model evaluation",
+   "key": "prediction",
+   "skills": [
+    "Machine learning",
+    "Python",
+    "Data engineering"
+   ],
+   "levels": [
+    3,
+    4
+   ],
+   "jobs": 85,
+   "intent": "Engineers analysts operations teams predictive maintenance risk scoring evaluate predictive models data validation failure detection operational constraints baseline error analysis"
+  }
+ ],
+ "Admin / Secretarial": [
+  {
+   "concept": "Generative AI for everyday business work",
+   "key": "productivity",
+   "skills": [
+    "Generative AI",
+    "LLM",
+    "AI agents"
+   ],
+   "levels": [
+    1,
+    2
+   ],
+   "jobs": 6,
+   "intent": "Non-technical staff executives administrators sales marketing HR teams use generative AI assistants copilots to draft summarise write reports emails proposals presentations content prompts review outputs everyday productivity"
+  },
+  {
+   "concept": "AI-assisted data analysis and forecasting",
+   "key": "analytics",
+   "skills": [
+    "Machine learning",
+    "Python",
+    "SQL"
+   ],
+   "levels": [
+    2,
+    3
+   ],
+   "jobs": 37,
+   "intent": "Analysts business operations teams clean analyse data dashboards reporting forecast sales demand trends customer segmentation insights spreadsheets decision making"
+  },
+  {
+   "concept": "AI assurance and governance review",
+   "key": "assurance",
+   "skills": [
+    "Responsible AI",
+    "Generative AI",
+    "LLM"
+   ],
+   "levels": [
+    1,
+    2
+   ],
+   "jobs": 7,
+   "intent": "Managers consultants risk compliance officers review AI use cases governance policy privacy bias controls accountability approval responsible business adoption"
+  }
+ ],
+ "Customer Service": [
+  {
+   "concept": "Generative AI for everyday business work",
+   "key": "productivity",
+   "skills": [
+    "Generative AI",
+    "LLM",
+    "AI agents"
+   ],
+   "levels": [
+    1,
+    2
+   ],
+   "jobs": 14,
+   "intent": "Non-technical staff executives administrators sales marketing HR teams use generative AI assistants copilots to draft summarise write reports emails proposals presentations content prompts review outputs everyday productivity"
+  },
+  {
+   "concept": "AI assurance and governance review",
+   "key": "assurance",
+   "skills": [
+    "Responsible AI",
+    "Generative AI",
+    "LLM"
+   ],
+   "levels": [
+    1,
+    2
+   ],
+   "jobs": 11,
+   "intent": "Managers consultants risk compliance officers review AI use cases governance policy privacy bias controls accountability approval responsible business adoption"
+  },
+  {
+   "concept": "AI-assisted data analysis and forecasting",
+   "key": "analytics",
+   "skills": [
+    "Machine learning",
+    "Python",
+    "SQL"
+   ],
+   "levels": [
+    2,
+    3
+   ],
+   "jobs": 31,
+   "intent": "Analysts business operations teams clean analyse data dashboards reporting forecast sales demand trends customer segmentation insights spreadsheets decision making"
+  }
+ ],
+ "Accounting / Auditing / Taxation": [
+  {
+   "concept": "Generative AI for everyday business work",
+   "key": "productivity",
+   "skills": [
+    "Generative AI",
+    "LLM",
+    "AI agents"
+   ],
+   "levels": [
+    1,
+    2
+   ],
+   "jobs": 9,
+   "intent": "Non-technical staff executives administrators sales marketing HR teams use generative AI assistants copilots to draft summarise write reports emails proposals presentations content prompts review outputs everyday productivity"
+  },
+  {
+   "concept": "AI-assisted data analysis and forecasting",
+   "key": "analytics",
+   "skills": [
+    "Machine learning",
+    "Python",
+    "SQL"
+   ],
+   "levels": [
+    2,
+    3
+   ],
+   "jobs": 32,
+   "intent": "Analysts business operations teams clean analyse data dashboards reporting forecast sales demand trends customer segmentation insights spreadsheets decision making"
+  },
+  {
+   "concept": "AI assurance and governance review",
+   "key": "assurance",
+   "skills": [
+    "Responsible AI",
+    "Generative AI",
+    "LLM"
+   ],
+   "levels": [
+    1,
+    2
+   ],
+   "jobs": 7,
+   "intent": "Managers consultants risk compliance officers review AI use cases governance policy privacy bias controls accountability approval responsible business adoption"
+  }
+ ],
+ "Advertising / Media": [
+  {
+   "concept": "Generative AI for everyday business work",
+   "key": "productivity",
+   "skills": [
+    "Generative AI",
+    "LLM",
+    "AI agents"
+   ],
+   "levels": [
+    1,
+    2
+   ],
+   "jobs": 31,
+   "intent": "Non-technical staff executives administrators sales marketing HR teams use generative AI assistants copilots to draft summarise write reports emails proposals presentations content prompts review outputs everyday productivity"
+  },
+  {
+   "concept": "AI assurance and governance review",
+   "key": "assurance",
+   "skills": [
+    "Responsible AI",
+    "Generative AI",
+    "LLM"
+   ],
+   "levels": [
+    1,
+    2
+   ],
+   "jobs": 27,
+   "intent": "Managers consultants risk compliance officers review AI use cases governance policy privacy bias controls accountability approval responsible business adoption"
+  },
+  {
+   "concept": "Customer and text intelligence with NLP",
+   "key": "language",
+   "skills": [
+    "NLP",
+    "LLM",
+    "Generative AI"
+   ],
+   "levels": [
+    2,
+    3
+   ],
+   "jobs": 27,
+   "intent": "Customer service marketing HR legal teams classify analyse text customer enquiries feedback sentiment complaints chatbots contracts resumes emails automate responses"
+  }
+ ],
+ "Human Resources": [
+  {
+   "concept": "AI-assisted data analysis and forecasting",
+   "key": "analytics",
+   "skills": [
+    "Machine learning",
+    "Python",
+    "SQL"
+   ],
+   "levels": [
+    2,
+    3
+   ],
+   "jobs": 34,
+   "intent": "Analysts business operations teams clean analyse data dashboards reporting forecast sales demand trends customer segmentation insights spreadsheets decision making"
+  },
+  {
+   "concept": "Generative AI for everyday business work",
+   "key": "productivity",
+   "skills": [
+    "Generative AI",
+    "LLM",
+    "AI agents"
+   ],
+   "levels": [
+    1,
+    2
+   ],
+   "jobs": 9,
+   "intent": "Non-technical staff executives administrators sales marketing HR teams use generative AI assistants copilots to draft summarise write reports emails proposals presentations content prompts review outputs everyday productivity"
+  },
+  {
+   "concept": "AI assurance and governance review",
+   "key": "assurance",
+   "skills": [
+    "Responsible AI",
+    "Generative AI",
+    "LLM"
+   ],
+   "levels": [
+    1,
+    2
+   ],
+   "jobs": 8,
+   "intent": "Managers consultants risk compliance officers review AI use cases governance policy privacy bias controls accountability approval responsible business adoption"
+  }
+ ],
+ "Professional Services": [
+  {
+   "concept": "Generative AI for everyday business work",
+   "key": "productivity",
+   "skills": [
+    "Generative AI",
+    "LLM",
+    "AI agents"
+   ],
+   "levels": [
+    1,
+    2
+   ],
+   "jobs": 36,
+   "intent": "Non-technical staff executives administrators sales marketing HR teams use generative AI assistants copilots to draft summarise write reports emails proposals presentations content prompts review outputs everyday productivity"
+  },
+  {
+   "concept": "Production AI reliability and monitoring",
+   "key": "production",
+   "skills": [
+    "MLOps",
+    "Cloud",
+    "Python"
+   ],
+   "levels": [
+    4,
+    5
+   ],
+   "jobs": 38,
+   "intent": "ML software engineers deploy operate monitor production AI models cloud model serving incident recovery rollback reliability drift performance"
+  },
+  {
+   "concept": "Bounded AI workflow and tool integration",
+   "key": "workflow",
+   "skills": [
+    "AI agents",
+    "LLM",
+    "RAG"
+   ],
+   "levels": [
+    3
+   ],
+   "jobs": 26,
+   "intent": "Software engineers technical teams integrate AI agents tools document retrieval assistants into internal workflows automation stop conditions approval recover failed calls"
+  }
+ ],
+ "Design": [
+  {
+   "concept": "Generative AI for everyday business work",
+   "key": "productivity",
+   "skills": [
+    "Generative AI",
+    "LLM",
+    "AI agents"
+   ],
+   "levels": [
+    1,
+    2
+   ],
+   "jobs": 25,
+   "intent": "Non-technical staff executives administrators sales marketing HR teams use generative AI assistants copilots to draft summarise write reports emails proposals presentations content prompts review outputs everyday productivity"
+  },
+  {
+   "concept": "Production AI reliability and monitoring",
+   "key": "production",
+   "skills": [
+    "MLOps",
+    "Cloud",
+    "Python"
+   ],
+   "levels": [
+    4,
+    5
+   ],
+   "jobs": 27,
+   "intent": "ML software engineers deploy operate monitor production AI models cloud model serving incident recovery rollback reliability drift performance"
+  },
+  {
+   "concept": "AI assurance and governance review",
+   "key": "assurance",
+   "skills": [
+    "Responsible AI",
+    "Generative AI",
+    "LLM"
+   ],
+   "levels": [
+    1,
+    2
+   ],
+   "jobs": 25,
+   "intent": "Managers consultants risk compliance officers review AI use cases governance policy privacy bias controls accountability approval responsible business adoption"
+  }
+ ],
+ "Education and Training": [
+  {
+   "concept": "Generative AI for everyday business work",
+   "key": "productivity",
+   "skills": [
+    "Generative AI",
+    "LLM",
+    "AI agents"
+   ],
+   "levels": [
+    1,
+    2
+   ],
+   "jobs": 23,
+   "intent": "Non-technical staff executives administrators sales marketing HR teams use generative AI assistants copilots to draft summarise write reports emails proposals presentations content prompts review outputs everyday productivity"
+  },
+  {
+   "concept": "AI assurance and governance review",
+   "key": "assurance",
+   "skills": [
+    "Responsible AI",
+    "Generative AI",
+    "LLM"
+   ],
+   "levels": [
+    1,
+    2
+   ],
+   "jobs": 22,
+   "intent": "Managers consultants risk compliance officers review AI use cases governance policy privacy bias controls accountability approval responsible business adoption"
+  },
+  {
+   "concept": "AI-assisted data analysis and forecasting",
+   "key": "analytics",
+   "skills": [
+    "Machine learning",
+    "Python",
+    "SQL"
+   ],
+   "levels": [
+    2,
+    3
+   ],
+   "jobs": 28,
+   "intent": "Analysts business operations teams clean analyse data dashboards reporting forecast sales demand trends customer segmentation insights spreadsheets decision making"
+  }
+ ],
+ "Logistics / Supply Chain": [
+  {
+   "concept": "AI-assisted data analysis and forecasting",
+   "key": "analytics",
+   "skills": [
+    "Machine learning",
+    "Python",
+    "SQL"
+   ],
+   "levels": [
+    2,
+    3
+   ],
+   "jobs": 53,
+   "intent": "Analysts business operations teams clean analyse data dashboards reporting forecast sales demand trends customer segmentation insights spreadsheets decision making"
+  },
+  {
+   "concept": "Predictive decision support and model evaluation",
+   "key": "prediction",
+   "skills": [
+    "Machine learning",
+    "Python",
+    "Data engineering"
+   ],
+   "levels": [
+    3,
+    4
+   ],
+   "jobs": 52,
+   "intent": "Engineers analysts operations teams predictive maintenance risk scoring evaluate predictive models data validation failure detection operational constraints baseline error analysis"
+  },
+  {
+   "concept": "Production AI reliability and monitoring",
+   "key": "production",
+   "skills": [
+    "MLOps",
+    "Cloud",
+    "Python"
+   ],
+   "levels": [
+    4,
+    5
+   ],
+   "jobs": 25,
+   "intent": "ML software engineers deploy operate monitor production AI models cloud model serving incident recovery rollback reliability drift performance"
+  }
+ ],
+ "Healthcare / Pharmaceutical": [
+  {
+   "concept": "Production AI reliability and monitoring",
+   "key": "production",
+   "skills": [
+    "MLOps",
+    "Cloud",
+    "Python"
+   ],
+   "levels": [
+    4,
+    5
+   ],
+   "jobs": 20,
+   "intent": "ML software engineers deploy operate monitor production AI models cloud model serving incident recovery rollback reliability drift performance"
+  },
+  {
+   "concept": "AI-assisted data analysis and forecasting",
+   "key": "analytics",
+   "skills": [
+    "Machine learning",
+    "Python",
+    "SQL"
+   ],
+   "levels": [
+    2,
+    3
+   ],
+   "jobs": 33,
+   "intent": "Analysts business operations teams clean analyse data dashboards reporting forecast sales demand trends customer segmentation insights spreadsheets decision making"
+  },
+  {
+   "concept": "Generative AI for everyday business work",
+   "key": "productivity",
+   "skills": [
+    "Generative AI",
+    "LLM",
+    "AI agents"
+   ],
+   "levels": [
+    1,
+    2
+   ],
+   "jobs": 5,
+   "intent": "Non-technical staff executives administrators sales marketing HR teams use generative AI assistants copilots to draft summarise write reports emails proposals presentations content prompts review outputs everyday productivity"
+  }
+ ],
+ "General Management": [
+  {
+   "concept": "Generative AI for everyday business work",
+   "key": "productivity",
+   "skills": [
+    "Generative AI",
+    "LLM",
+    "AI agents"
+   ],
+   "levels": [
+    1,
+    2
+   ],
+   "jobs": 9,
+   "intent": "Non-technical staff executives administrators sales marketing HR teams use generative AI assistants copilots to draft summarise write reports emails proposals presentations content prompts review outputs everyday productivity"
+  },
+  {
+   "concept": "AI assurance and governance review",
+   "key": "assurance",
+   "skills": [
+    "Responsible AI",
+    "Generative AI",
+    "LLM"
+   ],
+   "levels": [
+    1,
+    2
+   ],
+   "jobs": 9,
+   "intent": "Managers consultants risk compliance officers review AI use cases governance policy privacy bias controls accountability approval responsible business adoption"
+  },
+  {
+   "concept": "Production AI reliability and monitoring",
+   "key": "production",
+   "skills": [
+    "MLOps",
+    "Cloud",
+    "Python"
+   ],
+   "levels": [
+    4,
+    5
+   ],
+   "jobs": 12,
+   "intent": "ML software engineers deploy operate monitor production AI models cloud model serving incident recovery rollback reliability drift performance"
+  }
+ ],
+ "Insurance": [
+  {
+   "concept": "Generative AI for everyday business work",
+   "key": "productivity",
+   "skills": [
+    "Generative AI",
+    "LLM",
+    "AI agents"
+   ],
+   "levels": [
+    1,
+    2
+   ],
+   "jobs": 14,
+   "intent": "Non-technical staff executives administrators sales marketing HR teams use generative AI assistants copilots to draft summarise write reports emails proposals presentations content prompts review outputs everyday productivity"
+  },
+  {
+   "concept": "AI assurance and governance review",
+   "key": "assurance",
+   "skills": [
+    "Responsible AI",
+    "Generative AI",
+    "LLM"
+   ],
+   "levels": [
+    1,
+    2
+   ],
+   "jobs": 15,
+   "intent": "Managers consultants risk compliance officers review AI use cases governance policy privacy bias controls accountability approval responsible business adoption"
+  },
+  {
+   "concept": "Bounded AI workflow and tool integration",
+   "key": "workflow",
+   "skills": [
+    "AI agents",
+    "LLM",
+    "RAG"
+   ],
+   "levels": [
+    3
+   ],
+   "jobs": 10,
+   "intent": "Software engineers technical teams integrate AI agents tools document retrieval assistants into internal workflows automation stop conditions approval recover failed calls"
+  }
+ ],
+ "Environment / Health": [
+  {
+   "concept": "Generative AI for everyday business work",
+   "key": "productivity",
+   "skills": [
+    "Generative AI",
+    "LLM",
+    "AI agents"
+   ],
+   "levels": [
+    1,
+    2
+   ],
+   "jobs": 1,
+   "intent": "Non-technical staff executives administrators sales marketing HR teams use generative AI assistants copilots to draft summarise write reports emails proposals presentations content prompts review outputs everyday productivity"
+  },
+  {
+   "concept": "AI assurance and governance review",
+   "key": "assurance",
+   "skills": [
+    "Responsible AI",
+    "Generative AI",
+    "LLM"
+   ],
+   "levels": [
+    1,
+    2
+   ],
+   "jobs": 0,
+   "intent": "Managers consultants risk compliance officers review AI use cases governance policy privacy bias controls accountability approval responsible business adoption"
+  },
+  {
+   "concept": "Bounded AI workflow and tool integration",
+   "key": "workflow",
+   "skills": [
+    "AI agents",
+    "LLM",
+    "RAG"
+   ],
+   "levels": [
+    3
+   ],
+   "jobs": 1,
+   "intent": "Software engineers technical teams integrate AI agents tools document retrieval assistants into internal workflows automation stop conditions approval recover failed calls"
+  }
+ ],
+ "Events / Promotions": [
+  {
+   "concept": "Generative AI for everyday business work",
+   "key": "productivity",
+   "skills": [
+    "Generative AI",
+    "LLM",
+    "AI agents"
+   ],
+   "levels": [
+    1,
+    2
+   ],
+   "jobs": 8,
+   "intent": "Non-technical staff executives administrators sales marketing HR teams use generative AI assistants copilots to draft summarise write reports emails proposals presentations content prompts review outputs everyday productivity"
+  },
+  {
+   "concept": "AI assurance and governance review",
+   "key": "assurance",
+   "skills": [
+    "Responsible AI",
+    "Generative AI",
+    "LLM"
+   ],
+   "levels": [
+    1,
+    2
+   ],
+   "jobs": 7,
+   "intent": "Managers consultants risk compliance officers review AI use cases governance policy privacy bias controls accountability approval responsible business adoption"
+  },
+  {
+   "concept": "Customer and text intelligence with NLP",
+   "key": "language",
+   "skills": [
+    "NLP",
+    "LLM",
+    "Generative AI"
+   ],
+   "levels": [
+    2,
+    3
+   ],
+   "jobs": 7,
+   "intent": "Customer service marketing HR legal teams classify analyse text customer enquiries feedback sentiment complaints chatbots contracts resumes emails automate responses"
+  }
+ ],
+ "Risk Management": [
+  {
+   "concept": "AI-assisted data analysis and forecasting",
+   "key": "analytics",
+   "skills": [
+    "Machine learning",
+    "Python",
+    "SQL"
+   ],
+   "levels": [
+    2,
+    3
+   ],
+   "jobs": 17,
+   "intent": "Analysts business operations teams clean analyse data dashboards reporting forecast sales demand trends customer segmentation insights spreadsheets decision making"
+  },
+  {
+   "concept": "Generative AI for everyday business work",
+   "key": "productivity",
+   "skills": [
+    "Generative AI",
+    "LLM",
+    "AI agents"
+   ],
+   "levels": [
+    1,
+    2
+   ],
+   "jobs": 7,
+   "intent": "Non-technical staff executives administrators sales marketing HR teams use generative AI assistants copilots to draft summarise write reports emails proposals presentations content prompts review outputs everyday productivity"
+  },
+  {
+   "concept": "AI assurance and governance review",
+   "key": "assurance",
+   "skills": [
+    "Responsible AI",
+    "Generative AI",
+    "LLM"
+   ],
+   "levels": [
+    1,
+    2
+   ],
+   "jobs": 9,
+   "intent": "Managers consultants risk compliance officers review AI use cases governance policy privacy bias controls accountability approval responsible business adoption"
+  }
+ ],
+ "Wholesale Trade": [
+  {
+   "concept": "Generative AI for everyday business work",
+   "key": "productivity",
+   "skills": [
+    "Generative AI",
+    "LLM",
+    "AI agents"
+   ],
+   "levels": [
+    1,
+    2
+   ],
+   "jobs": 4,
+   "intent": "Non-technical staff executives administrators sales marketing HR teams use generative AI assistants copilots to draft summarise write reports emails proposals presentations content prompts review outputs everyday productivity"
+  },
+  {
+   "concept": "AI assurance and governance review",
+   "key": "assurance",
+   "skills": [
+    "Responsible AI",
+    "Generative AI",
+    "LLM"
+   ],
+   "levels": [
+    1,
+    2
+   ],
+   "jobs": 3,
+   "intent": "Managers consultants risk compliance officers review AI use cases governance policy privacy bias controls accountability approval responsible business adoption"
+  },
+  {
+   "concept": "AI-assisted data analysis and forecasting",
+   "key": "analytics",
+   "skills": [
+    "Machine learning",
+    "Python",
+    "SQL"
+   ],
+   "levels": [
+    2,
+    3
+   ],
+   "jobs": 7,
+   "intent": "Analysts business operations teams clean analyse data dashboards reporting forecast sales demand trends customer segmentation insights spreadsheets decision making"
+  }
+ ],
+ "Medical / Therapy Services": [
+  {
+   "concept": "Generative AI for everyday business work",
+   "key": "productivity",
+   "skills": [
+    "Generative AI",
+    "LLM",
+    "AI agents"
+   ],
+   "levels": [
+    1,
+    2
+   ],
+   "jobs": 0,
+   "intent": "Non-technical staff executives administrators sales marketing HR teams use generative AI assistants copilots to draft summarise write reports emails proposals presentations content prompts review outputs everyday productivity"
+  },
+  {
+   "concept": "AI assurance and governance review",
+   "key": "assurance",
+   "skills": [
+    "Responsible AI",
+    "Generative AI",
+    "LLM"
+   ],
+   "levels": [
+    1,
+    2
+   ],
+   "jobs": 0,
+   "intent": "Managers consultants risk compliance officers review AI use cases governance policy privacy bias controls accountability approval responsible business adoption"
+  },
+  {
+   "concept": "AI-assisted data analysis and forecasting",
+   "key": "analytics",
+   "skills": [
+    "Machine learning",
+    "Python",
+    "SQL"
+   ],
+   "levels": [
+    2,
+    3
+   ],
+   "jobs": 6,
+   "intent": "Analysts business operations teams clean analyse data dashboards reporting forecast sales demand trends customer segmentation insights spreadsheets decision making"
+  }
+ ],
+ "Telecommunications": [
+  {
+   "concept": "Production AI reliability and monitoring",
+   "key": "production",
+   "skills": [
+    "MLOps",
+    "Cloud",
+    "Python"
+   ],
+   "levels": [
+    4,
+    5
+   ],
+   "jobs": 18,
+   "intent": "ML software engineers deploy operate monitor production AI models cloud model serving incident recovery rollback reliability drift performance"
+  },
+  {
+   "concept": "AI-assisted data analysis and forecasting",
+   "key": "analytics",
+   "skills": [
+    "Machine learning",
+    "Python",
+    "SQL"
+   ],
+   "levels": [
+    2,
+    3
+   ],
+   "jobs": 16,
+   "intent": "Analysts business operations teams clean analyse data dashboards reporting forecast sales demand trends customer segmentation insights spreadsheets decision making"
+  },
+  {
+   "concept": "Generative AI for everyday business work",
+   "key": "productivity",
+   "skills": [
+    "Generative AI",
+    "LLM",
+    "AI agents"
+   ],
+   "levels": [
+    1,
+    2
+   ],
+   "jobs": 11,
+   "intent": "Non-technical staff executives administrators sales marketing HR teams use generative AI assistants copilots to draft summarise write reports emails proposals presentations content prompts review outputs everyday productivity"
+  }
+ ],
+ "Legal": [
+  {
+   "concept": "Generative AI for everyday business work",
+   "key": "productivity",
+   "skills": [
+    "Generative AI",
+    "LLM",
+    "AI agents"
+   ],
+   "levels": [
+    1,
+    2
+   ],
+   "jobs": 8,
+   "intent": "Non-technical staff executives administrators sales marketing HR teams use generative AI assistants copilots to draft summarise write reports emails proposals presentations content prompts review outputs everyday productivity"
+  },
+  {
+   "concept": "AI assurance and governance review",
+   "key": "assurance",
+   "skills": [
+    "Responsible AI",
+    "Generative AI",
+    "LLM"
+   ],
+   "levels": [
+    1,
+    2
+   ],
+   "jobs": 6,
+   "intent": "Managers consultants risk compliance officers review AI use cases governance policy privacy bias controls accountability approval responsible business adoption"
+  },
+  {
+   "concept": "Bounded AI workflow and tool integration",
+   "key": "workflow",
+   "skills": [
+    "AI agents",
+    "LLM",
+    "RAG"
+   ],
+   "levels": [
+    3
+   ],
+   "jobs": 5,
+   "intent": "Software engineers technical teams integrate AI agents tools document retrieval assistants into internal workflows automation stop conditions approval recover failed calls"
+  }
+ ],
+ "Building and Construction": [
+  {
+   "concept": "Generative AI for everyday business work",
+   "key": "productivity",
+   "skills": [
+    "Generative AI",
+    "LLM",
+    "AI agents"
+   ],
+   "levels": [
+    1,
+    2
+   ],
+   "jobs": 5,
+   "intent": "Non-technical staff executives administrators sales marketing HR teams use generative AI assistants copilots to draft summarise write reports emails proposals presentations content prompts review outputs everyday productivity"
+  },
+  {
+   "concept": "Bounded AI workflow and tool integration",
+   "key": "workflow",
+   "skills": [
+    "AI agents",
+    "LLM",
+    "RAG"
+   ],
+   "levels": [
+    3
+   ],
+   "jobs": 5,
+   "intent": "Software engineers technical teams integrate AI agents tools document retrieval assistants into internal workflows automation stop conditions approval recover failed calls"
+  },
+  {
+   "concept": "AI-assisted data analysis and forecasting",
+   "key": "analytics",
+   "skills": [
+    "Machine learning",
+    "Python",
+    "SQL"
+   ],
+   "levels": [
+    2,
+    3
+   ],
+   "jobs": 5,
+   "intent": "Analysts business operations teams clean analyse data dashboards reporting forecast sales demand trends customer segmentation insights spreadsheets decision making"
+  }
+ ]
+}

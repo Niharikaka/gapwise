@@ -184,7 +184,20 @@ def verdict(sector: str, audience: str, need: str, level_min: int, level_max: in
             "matched_description": matched is not None, "alternative": alternative, "alternative_key": engine["key"] if alternative else ""}
 
 
+IDEAS = GAPWISE / "ideas.json"
+
+
 def ideas(sector: str, limit: int = 3) -> list[dict]:
+    """Course ideas for an industry. Read from the precomputed file (built by `python gapwise_data.py build`)
+    so switching industry is instant; computed on the fly only for an industry missing from it."""
+    if IDEAS.exists():
+        saved = json.loads(IDEAS.read_text())
+        if sector in saved:
+            return saved[sector][:limit]
+    return compute_ideas(sector, limit)
+
+
+def compute_ideas(sector: str, limit: int = 3) -> list[dict]:
     """Course ideas for an industry, ranked by the existing engine under a neutral brief
     (all depths, generic learners) so no idea is favoured by wording the user never gave."""
     from provider_project.brief import ProviderBrief
@@ -375,10 +388,20 @@ def build():
     c["industry"] = c.title.map(sector_of)
     c[["record_id", "title", "base_title", "provider_name", "source", "hours", "attendance", "industry", *FOCUS_SKILLS]].to_csv(GAPWISE / "course_skills.csv", index=False)
     print(f"radar sectors {len(r)}, AI courses {len(c)}")
+    build_ideas()
+
+
+def build_ideas():
+    """Precompute the Course ideas page for every industry in the picker (about 4 minutes)."""
+    out = {s: compute_ideas(s) for s in sectors().sector.tolist()}
+    IDEAS.write_text(json.dumps(out, indent=1))
+    print(f"course ideas for {len(out)} industries")
 
 
 if __name__ == "__main__":
     if sys.argv[1:] == ["build"]:
         build()
+    elif sys.argv[1:] == ["ideas"]:
+        build_ideas()
     else:
         print(__doc__)
