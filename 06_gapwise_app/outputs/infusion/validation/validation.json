@@ -1,0 +1,46 @@
+{
+  "labels": "Y = course teaches the matched task; P = task only peripheral (audience, job roles, a passing mention); N = wrong match",
+  "fresh_sample_after_fixes": {
+    "all": {
+      "n": 52,
+      "strict_precision": 0.673,
+      "precision_incl_partial": 0.923
+    },
+    "outcomes": {
+      "n": 27,
+      "strict_precision": 0.741,
+      "precision_incl_partial": 0.963
+    },
+    "description": {
+      "n": 25,
+      "strict_precision": 0.6,
+      "precision_incl_partial": 0.88
+    },
+    "design": "52 matched courses drawn at random (seed 589), excluding the development sample"
+  },
+  "development_sample_before_fixes": {
+    "all": {
+      "n": 78,
+      "strict_precision": 0.628,
+      "precision_incl_partial": 0.782
+    },
+    "design": "6 per task (4 outcomes, 2 description), seed 588; used to find and fix false-positive patterns, so its after-fix figures are optimistic and not reported"
+  },
+  "industry_tags_before_fixes": {
+    "tagged": {
+      "n": 40,
+      "strict_precision": 0.825,
+      "precision_incl_partial": 0.875
+    },
+    "cross_industry": {
+      "n": 10,
+      "strict_precision": 0.8
+    },
+    "fixed": "Admin and office no longer matches bare 'administration' (4 of 5 were wrong); Talent Casting no longer HR; radiology now Healthcare"
+  },
+  "caveats": [
+    "Labels are an AI reviewer's judgement; a human should confirm human_label before reporting",
+    "Small samples: a 52-item precision of 67% has a 95% interval of roughly 54-79%",
+    "Precision only: missed tasks (recall) were not measured"
+  ]
+}

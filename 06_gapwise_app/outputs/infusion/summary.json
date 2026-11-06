@@ -1,0 +1,223 @@
+{
+  "sectors": {
+    "Finance and accounting": {
+      "courses_after_merging_variants": 1481,
+      "with_ai": 202,
+      "no_ai": 1279,
+      "no_ai_attendance": 23250,
+      "l1_baseline": 1279,
+      "l1_optional_hands_on": 5,
+      "L2 task upgrade": 367,
+      "L3 hiring-backed": 0,
+      "L3 build ahead": 96,
+      "upgrade_from_outcomes": 254,
+      "upgrade_from_description_only": 209,
+      "without_usable_outcomes": 531
+    },
+    "Human resources": {
+      "courses_after_merging_variants": 282,
+      "with_ai": 36,
+      "no_ai": 246,
+      "no_ai_attendance": 17140,
+      "l1_baseline": 246,
+      "l1_optional_hands_on": 0,
+      "L2 task upgrade": 43,
+      "L3 hiring-backed": 0,
+      "L3 build ahead": 0,
+      "upgrade_from_outcomes": 28,
+      "upgrade_from_description_only": 15,
+      "without_usable_outcomes": 29
+    },
+    "Logistics and supply chain": {
+      "courses_after_merging_variants": 521,
+      "with_ai": 36,
+      "no_ai": 485,
+      "no_ai_attendance": 19117,
+      "l1_baseline": 485,
+      "l1_optional_hands_on": 7,
+      "L2 task upgrade": 121,
+      "L3 hiring-backed": 65,
+      "L3 build ahead": 22,
+      "upgrade_from_outcomes": 156,
+      "upgrade_from_description_only": 52,
+      "without_usable_outcomes": 89
+    },
+    "Building and construction": {
+      "courses_after_merging_variants": 343,
+      "with_ai": 6,
+      "no_ai": 337,
+      "no_ai_attendance": 109755,
+      "l1_baseline": 337,
+      "l1_optional_hands_on": 72,
+      "L2 task upgrade": 46,
+      "L3 hiring-backed": 0,
+      "L3 build ahead": 20,
+      "upgrade_from_outcomes": 41,
+      "upgrade_from_description_only": 25,
+      "without_usable_outcomes": 62
+    },
+    "Customer service": {
+      "courses_after_merging_variants": 224,
+      "with_ai": 15,
+      "no_ai": 209,
+      "no_ai_attendance": 55364,
+      "l1_baseline": 209,
+      "l1_optional_hands_on": 3,
+      "L2 task upgrade": 3,
+      "L3 hiring-backed": 83,
+      "L3 build ahead": 0,
+      "upgrade_from_outcomes": 60,
+      "upgrade_from_description_only": 26,
+      "without_usable_outcomes": 2
+    },
+    "Marketing and sales": {
+      "courses_after_merging_variants": 1166,
+      "with_ai": 172,
+      "no_ai": 994,
+      "no_ai_attendance": 115185,
+      "l1_baseline": 994,
+      "l1_optional_hands_on": 4,
+      "L2 task upgrade": 408,
+      "L3 hiring-backed": 0,
+      "L3 build ahead": 31,
+      "upgrade_from_outcomes": 297,
+      "upgrade_from_description_only": 142,
+      "without_usable_outcomes": 162
+    },
+    "Healthcare": {
+      "courses_after_merging_variants": 1261,
+      "with_ai": 56,
+      "no_ai": 1205,
+      "no_ai_attendance": 22638,
+      "l1_baseline": 1205,
+      "l1_optional_hands_on": 12,
+      "L2 task upgrade": 32,
+      "L3 hiring-backed": 0,
+      "L3 build ahead": 5,
+      "upgrade_from_outcomes": 15,
+      "upgrade_from_description_only": 22,
+      "without_usable_outcomes": 417
+    },
+    "Admin and office": {
+      "courses_after_merging_variants": 16,
+      "with_ai": 1,
+      "no_ai": 15,
+      "no_ai_attendance": 1435,
+      "l1_baseline": 15,
+      "l1_optional_hands_on": 0,
+      "L2 task upgrade": 1,
+      "L3 hiring-backed": 1,
+      "L3 build ahead": 1,
+      "upgrade_from_outcomes": 3,
+      "upgrade_from_description_only": 0,
+      "without_usable_outcomes": 0
+    },
+    "Cross-industry": {
+      "courses_after_merging_variants": 33336,
+      "with_ai": 3049,
+      "no_ai": 30287,
+      "no_ai_attendance": 2990391,
+      "l1_baseline": 30287,
+      "l1_optional_hands_on": 1190,
+      "L2 task upgrade": 1877,
+      "L3 hiring-backed": 273,
+      "L3 build ahead": 0,
+      "upgrade_from_outcomes": 1173,
+      "upgrade_from_description_only": 977,
+      "without_usable_outcomes": 12482
+    }
+  },
+  "rules": {
+    "min_task_share_for_l2": 0.1,
+    "min_ai_task_ads_for_l3": 25,
+    "min_l3_share_for_l3": 0.2
+  },
+  "baseline_hours": 2,
+  "tasks": {
+    "report_writing": {
+      "label": "Writing reports and business documents",
+      "addon": "Drafting reports with AI, then fact-checking them",
+      "level": "L2",
+      "hours": 3
+    },
+    "budgeting_forecasting": {
+      "label": "Budgeting and forecasting",
+      "addon": "AI-assisted forecasting and variance commentary",
+      "level": "L2",
+      "hours": 4
+    },
+    "financial_statements": {
+      "label": "Reading financial statements",
+      "addon": "Analysing statements with AI and checking its answers",
+      "level": "L2",
+      "hours": 3
+    },
+    "document_review": {
+      "label": "Reviewing contracts, policies and regulations",
+      "addon": "Answering questions from approved documents (RAG)",
+      "level": "L3",
+      "hours": 6
+    },
+    "audit_reconciliation": {
+      "label": "Audit, controls and reconciliation",
+      "addon": "AI anomaly checks and reconciliation with human sign-off",
+      "level": "L3",
+      "hours": 4
+    },
+    "data_analysis": {
+      "label": "Analysing data in spreadsheets and dashboards",
+      "addon": "An AI copilot for spreadsheet analysis",
+      "level": "L2",
+      "hours": 3
+    },
+    "customer_communication": {
+      "label": "Handling customer enquiries and complaints",
+      "addon": "Working with AI assistants and supervising chat agents",
+      "level": "L3",
+      "hours": 4
+    },
+    "research_summarising": {
+      "label": "Researching and summarising information",
+      "addon": "AI research and summaries with source citations",
+      "level": "L2",
+      "hours": 3
+    },
+    "content_marketing": {
+      "label": "Creating marketing content",
+      "addon": "Generative AI content with brand and accuracy checks",
+      "level": "L2",
+      "hours": 4
+    },
+    "recruitment": {
+      "label": "Recruiting and screening candidates",
+      "addon": "AI-assisted screening with fairness checks",
+      "level": "L2",
+      "hours": 3
+    },
+    "tender_procurement": {
+      "label": "Tenders, procurement and vendor evaluation",
+      "addon": "AI review of tender documents and specifications",
+      "level": "L3",
+      "hours": 4
+    },
+    "planning_scheduling": {
+      "label": "Planning, scheduling and inventory",
+      "addon": "AI-assisted planning and optimisation",
+      "level": "L2",
+      "hours": 4
+    },
+    "inspection_quality": {
+      "label": "Inspection and quality checks",
+      "addon": "Using AI image tools for inspection, and their limits",
+      "level": "L2",
+      "hours": 3
+    }
+  },
+  "limitations": [
+    "L1 baseline is a policy choice for every course, not evidence of demand",
+    "Lexical task matches on published text, not audited syllabi",
+    "Course industry from title keywords; untagged courses are compared with all job ads",
+    "Attendance is the MySkillsFuture attendancecount summed across format variants; universities have none",
+    "Add-on wording is a declared template; skills and level evidence come from AI-asking job ads"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "scenario": "strict",
+  "jobs": 94316,
+  "ai_jobs": 3627,
+  "ai_rate": 0.03845582933966665,
+  "cet_ai_courses": 2101,
+  "university_ai_courses": 760,
+  "beta": 0.1686380436893316,
+  "salary_cutoff": 19425.447499999864
+}

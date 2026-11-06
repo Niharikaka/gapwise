@@ -1,0 +1,45 @@
+{
+  "run_id": "7c5b80fc0bcf46c4a2897704a2973fc7",
+  "created_at": "2026-10-30T09:05:36.480244+00:00",
+  "model": "deepseek-flash",
+  "original": [
+    "Explain what AI can and cannot do in healthcare, and follow safe practices for confidential data",
+    "Assess an AI use in healthcare for privacy, bias and accountability risks, and decide what checks it needs",
+    "Use generative AI to draft and improve healthcare documents, and check every output for accuracy before sharing it",
+    "Use an AI assistant that answers from approved healthcare documents, and check each answer against its source",
+    "Plan schedules and inventory with AI suggestions, and test them against real constraints"
+  ],
+  "attempts": [
+    {
+      "proposed": [
+        "Explain what AI can and cannot do in healthcare, and follow safe practices for confidential data",
+        "Assess an AI use in healthcare for privacy, bias and accountability risks, and decide what checks it needs",
+        "Use generative AI to draft and improve healthcare documents, and check every output for accuracy before sharing it",
+        "Use an AI assistant that answers from approved healthcare documents, and check each answer against its source",
+        "Plan schedules and inventory with AI suggestions, and test them against real constraints"
+      ],
+      "problems": [
+        "Objectives 1, 2, 3, 4, 5 are almost unchanged: tailor them to this course's own terms"
+      ]
+    },
+    {
+      "proposed": [
+        "Explain the limits of AI in nursing and healthcare administration work, and apply safe practices for confidential patient and staff data",
+        "Evaluate proposed AI uses in healthcare settings for privacy, bias and accountability risks, and determine the checks each one needs",
+        "Draft and refine healthcare documents with generative AI, verifying every output for accuracy before it is shared",
+        "Check answers from an AI assistant grounded in approved healthcare documents against the source documents themselves",
+        "Test AI-generated staff schedules and inventory suggestions against real ward and administrative constraints before adopting them"
+      ],
+      "problems": []
+    }
+  ],
+  "status": "accepted",
+  "objectives": [
+    "Explain the limits of AI in nursing and healthcare administration work, and apply safe practices for confidential patient and staff data",
+    "Evaluate proposed AI uses in healthcare settings for privacy, bias and accountability risks, and determine the checks each one needs",
+    "Draft and refine healthcare documents with generative AI, verifying every output for accuracy before it is shared",
+    "Check answers from an AI assistant grounded in approved healthcare documents against the source documents themselves",
+    "Test AI-generated staff schedules and inventory suggestions against real ward and administrative constraints before adopting them"
+  ],
+  "cost_upper_usd": 0.0005399999999999999
+}

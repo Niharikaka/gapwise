@@ -1,0 +1,41 @@
+{
+  "run_id": "1477c8de2a404de4bbe7952cb22b1fc5",
+  "created_at": "2026-10-30T08:56:55.268599+00:00",
+  "model": "deepseek-flash",
+  "original": [
+    "Explain what AI can and cannot do in finance, and follow safe practices for confidential data",
+    "Prepare budgets and forecasts with AI help, and explain the variances in plain terms",
+    "Draft finance reports with AI help, then fact-check and edit them before use",
+    "Analyse financial statements with AI help and check its answers against the source figures"
+  ],
+  "attempts": [
+    {
+      "proposed": [
+        "Explain what AI can and cannot do in finance, and follow safe practices for confidential data",
+        "Prepare budgets and forecasts with AI help, and explain the variances in plain terms",
+        "Draft monthly management reports with AI help, then fact-check and edit them before use",
+        "Analyse financial statements with AI help and check its answers against the source figures"
+      ],
+      "problems": [
+        "Objectives 1, 2, 4 are almost unchanged: tailor them to this course's own terms"
+      ]
+    },
+    {
+      "proposed": [
+        "Explain what AI can and cannot do when preparing SME budgets, and follow safe practices for confidential data",
+        "Build budgets and forecasts with AI help, and explain variances in plain terms for the SME finance team",
+        "Draft monthly management reports with AI help, then fact-check and edit them before use",
+        "Evaluate financial statements with AI help and check its answers against the source figures"
+      ],
+      "problems": []
+    }
+  ],
+  "status": "accepted",
+  "objectives": [
+    "Explain what AI can and cannot do when preparing SME budgets, and follow safe practices for confidential data",
+    "Build budgets and forecasts with AI help, and explain variances in plain terms for the SME finance team",
+    "Draft monthly management reports with AI help, then fact-check and edit them before use",
+    "Evaluate financial statements with AI help and check its answers against the source figures"
+  ],
+  "cost_upper_usd": 0.0004527
+}

@@ -1,0 +1,12 @@
+{
+  "command": "pilot",
+  "model": "deepseek-flash",
+  "requested": 1061,
+  "outcomes": {
+    "cached": 1046,
+    "reviewed": 6,
+    "error": 9
+  },
+  "budget_usd": 2.0,
+  "conservative_spend_usd": 1.4254755000000008
+}

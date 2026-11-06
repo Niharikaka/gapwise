@@ -1,0 +1,8 @@
+{
+  "old_untagged_human_positive_count": 13,
+  "teacher_labels_for_old_untagged_positives": {
+    "no_evidence": 13
+  },
+  "interpretation": "Existing human positives include generic software, desktop support and infrastructure jobs without observed AI requirements. Strict observed-demand and potential-adoption constructs differ. Preserve both labels; do not silently rewrite benchmark truth or treat low agreement as proof of either side's correctness.",
+  "all_teacher_disagreements": 93
+}

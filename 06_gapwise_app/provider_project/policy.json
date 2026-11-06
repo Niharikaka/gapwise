@@ -1,0 +1,21 @@
+{
+  "version": "provider-v3.1",
+  "minimum_sector_ai_jobs": 25,
+  "minimum_candidate_skill_jobs": 5,
+  "minimum_explicit_support_share": 0.2,
+  "maximum_sector_courses_per_100_ai_jobs": 100,
+  "minimum_audience_title_matches": 3,
+  "minimum_sector_depth_share": 0.05,
+  "minimum_mean_positive_skill_gap": 0.005,
+  "minimum_brief_similarity": 0.015,
+  "minimum_known_outcome_courses": 2,
+  "weights": {
+    "brief_fit": 0.3,
+    "skill_gap": 0.2,
+    "skill_demand": 0.2,
+    "depth_fit": 0.1,
+    "outcome_evidence": 0.1,
+    "sector_opportunity": 0.1
+  },
+  "notes": "Predeclared demonstration heuristics, not empirically validated commercial thresholds. Exact sector AI postings are the denominator of the sector course/posting ratio; courses count toward a sector only when their title names it, using a declared pattern for each of 28 categories; unmapped categories receive no supply count. The v3.1 patterns were revised after a blind stratified review and scored on held-out courses (AI-reviewer labels, not yet human-reviewed): precision about 0.90, recall about 0.57, so the count is a lower bound on sector supply (outputs/provider_demo/sector_mapping_validation). Audience fit is title-token screening, not proof of occupational suitability. A gap is a text-mention difference, not learner deficit. Differentiation is a documented design hypothesis grounded in outcome passages, never proven novelty. All thresholds and weights are stress-tested; uncertainty remains. The supply limit is a new-launch gate. An explicit adaptation brief may proceed in a crowded sector only with an identified baseline course and usable outcome evidence; this is not a finding of limited supply."
+}

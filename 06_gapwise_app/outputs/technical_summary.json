@@ -1,0 +1,258 @@
+{
+  "verified": true,
+  "review_coverage": {
+    "jobs": 94316,
+    "jobs_llm_reviewed": 2413,
+    "courses": 52175,
+    "courses_llm_reviewed": 1355,
+    "unique_job_texts_reviewed": 972,
+    "unique_course_texts_reviewed": 79,
+    "identical_text_propagation": true
+  },
+  "model_results": [
+    {
+      "model": "dictionary_original",
+      "precision": 0.5430895741556555,
+      "recall": 0.2453486813911437,
+      "f1": 0.33800062328015423,
+      "accuracy": 0.8463957334916665,
+      "confusion_weighted": [
+        [
+          76130.2199999999,
+          3111.560000000001
+        ],
+        [
+          11375.779999999995,
+          3698.4400000000014
+        ]
+      ],
+      "n_reviewed": 400
+    },
+    {
+      "model": "rules_strict",
+      "precision": 0.6988064165457265,
+      "recall": 0.16801798036648044,
+      "f1": 0.27090156482303546,
+      "accuracy": 0.8554527333644345,
+      "confusion_weighted": [
+        [
+          78150.13999999987,
+          1091.640000000001
+        ],
+        [
+          12541.480000000003,
+          2532.740000000003
+        ]
+      ],
+      "n_reviewed": 400
+    },
+    {
+      "model": "rules_expanded",
+      "precision": 0.6988064165457265,
+      "recall": 0.16801798036648044,
+      "f1": 0.27090156482303546,
+      "accuracy": 0.8554527333644345,
+      "confusion_weighted": [
+        [
+          78150.13999999987,
+          1091.640000000001
+        ],
+        [
+          12541.480000000003,
+          2532.740000000003
+        ]
+      ],
+      "n_reviewed": 400
+    },
+    {
+      "model": "teacher_strict",
+      "precision": 0.7866383006893897,
+      "recall": 0.173737070306166,
+      "f1": 0.2846141995722377,
+      "accuracy": 0.8578827238837284,
+      "confusion_weighted": [
+        [
+          76714.5099999999,
+          709.0500000000003
+        ],
+        [
+          12432.580000000004,
+          2614.1800000000026
+        ]
+      ],
+      "n_reviewed": 394
+    },
+    {
+      "model": "teacher_expanded",
+      "precision": 0.7866383006893897,
+      "recall": 0.173737070306166,
+      "f1": 0.2846141995722377,
+      "accuracy": 0.8578827238837284,
+      "confusion_weighted": [
+        [
+          76714.5099999999,
+          709.0500000000003
+        ],
+        [
+          12432.580000000004,
+          2614.1800000000026
+        ]
+      ],
+      "n_reviewed": 394
+    },
+    {
+      "model": "student_expanded",
+      "precision": 0.6333817994455816,
+      "recall": 0.47624288354555017,
+      "f1": 0.5436857690297863,
+      "accuracy": 0.8722314347512617,
+      "confusion_weighted": [
+        [
+          75086.38999999988,
+          4155.3899999999985
+        ],
+        [
+          7895.229999999995,
+          7178.9899999999925
+        ]
+      ],
+      "n_reviewed": 400
+    }
+  ],
+  "student": {
+    "status": "trained",
+    "n_training": 432,
+    "n_development": 145,
+    "n_benchmark": 400,
+    "threshold": 0.49999999999999994,
+    "development_agreement_with_teacher": {
+      "model": "teacher_dev",
+      "precision": 0.7555555555555555,
+      "recall": 0.8717948717948718,
+      "f1": 0.8095238095238095,
+      "accuracy": 0.8896551724137931,
+      "confusion_weighted": [
+        [
+          95.0,
+          11.0
+        ],
+        [
+          5.0,
+          34.0
+        ]
+      ],
+      "n_reviewed": 145
+    },
+    "dictionary_agreement_with_teacher_development": {
+      "model": "dictionary_on_teacher_dev",
+      "precision": 0.609375,
+      "recall": 1.0,
+      "f1": 0.7572815533980582,
+      "accuracy": 0.8275862068965517,
+      "confusion_weighted": [
+        [
+          81.0,
+          25.0
+        ],
+        [
+          0.0,
+          39.0
+        ]
+      ],
+      "n_reviewed": 145
+    },
+    "benchmark_text_overlap": 0,
+    "benchmark_description_group_overlap": 0,
+    "conflicting_description_groups_excluded": 0,
+    "score_warning": "Uncalibrated model scores, not probabilities of correctness.",
+    "scope": "Binary expanded demand only; no inferred explicit/implied split or maturity."
+  },
+  "scenarios": [
+    {
+      "scenario": "legacy",
+      "jobs": 94316,
+      "ai_jobs": 6810,
+      "ai_rate": 0.07220407990160736,
+      "cet_ai_courses": 2760,
+      "university_ai_courses": 1131,
+      "beta": 0.1401316289898009,
+      "salary_cutoff": 19425.447499999864
+    },
+    {
+      "scenario": "strict",
+      "jobs": 94316,
+      "ai_jobs": 3627,
+      "ai_rate": 0.03845582933966665,
+      "cet_ai_courses": 2101,
+      "university_ai_courses": 760,
+      "beta": 0.1686380436893316,
+      "salary_cutoff": 19425.447499999864
+    },
+    {
+      "scenario": "expanded",
+      "jobs": 94316,
+      "ai_jobs": 3630,
+      "ai_rate": 0.03848763730438102,
+      "cet_ai_courses": 2114,
+      "university_ai_courses": 766,
+      "beta": 0.16920955121098924,
+      "salary_cutoff": 19425.447499999864
+    },
+    {
+      "scenario": "student",
+      "jobs": 94316,
+      "ai_jobs": 7545,
+      "ai_rate": 0.07999703125662666,
+      "cet_ai_courses": 2114,
+      "university_ai_courses": 766,
+      "beta": 0.28918372289553357,
+      "salary_cutoff": 19425.447499999864
+    }
+  ],
+  "api_spend_upper_estimate_usd": 1.4254755000000008,
+  "agentic_evaluation": {
+    "planned": 30,
+    "attempted": 30,
+    "completed_live_outputs": 30,
+    "conditions": {
+      "grounded": {
+        "runs": 15,
+        "first_draft_valid_share": 1,
+        "checked_outputs": 15,
+        "measured_claims": 58,
+        "verified_measured_claims": 58,
+        "mean_latency_seconds": 8.77468700290968,
+        "cost_upper_usd": 0.05554019999999999
+      },
+      "baseline": {
+        "runs": 15,
+        "first_draft_valid_share": 0.9333333333333333,
+        "checked_outputs": 15,
+        "measured_claims": 0,
+        "verified_measured_claims": 0,
+        "mean_latency_seconds": 4.960657450122138,
+        "cost_upper_usd": 0.019066499999999997
+      }
+    },
+    "usefulness": {
+      "status": "pending_human_ratings",
+      "rating_count": 0,
+      "conditions": {},
+      "note": "Descriptive ratings only; repeated generations and repeated reviewers are not independent business cases."
+    },
+    "limitations": [
+      "Five fixed briefs with repeated generations; not thirty independent business cases.",
+      "Source checks verify structured claims and constraints, not all qualitative narrative truth.",
+      "Accepted-output correctness is enforced by the checker; inspect first-draft errors and repair rates too.",
+      "No-evidence baseline claim accuracy is undefined when it makes no measured claims.",
+      "Abstention oracle reflects this candidate catalogue and fixed rules, not proof of no real market demand.",
+      "Condition labels are hidden in the rating view, but evidence content can reveal the condition."
+    ],
+    "cumulative_agent_cost_upper_usd": 0.07460670000000001
+  },
+  "remaining": [
+    "Full-population LLM review is not authorised or completed by the $2 pilot.",
+    "No independent new human gold standard; old labels and observed-demand definitions differ.",
+    "Agent usefulness ratings require actual reviewers; see outputs/agentic/evaluations/course_agent_v1/summary.json for live technical evaluation."
+  ]
+}

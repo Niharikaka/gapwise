@@ -1,0 +1,8 @@
+domain,unique_jobs,course_entries,courses_per_100_jobs,interpretation
+Finance,337,56,16.617210682492583,Catalogue-count/domain-tag proxy; not capacity or unmet enrolment demand
+Engineering/manufacturing,764,20,2.6178010471204187,Catalogue-count/domain-tag proxy; not capacity or unmet enrolment demand
+Marketing,296,33,11.14864864864865,Catalogue-count/domain-tag proxy; not capacity or unmet enrolment demand
+Logistics,85,0,0.0,Catalogue-count/domain-tag proxy; not capacity or unmet enrolment demand
+Healthcare,250,18,7.2,Catalogue-count/domain-tag proxy; not capacity or unmet enrolment demand
+Education,89,13,14.606741573033707,Catalogue-count/domain-tag proxy; not capacity or unmet enrolment demand
+HR,94,3,3.1914893617021276,Catalogue-count/domain-tag proxy; not capacity or unmet enrolment demand

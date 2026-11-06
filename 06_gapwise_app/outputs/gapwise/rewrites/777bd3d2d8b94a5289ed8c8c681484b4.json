@@ -1,0 +1,33 @@
+{
+  "run_id": "777bd3d2d8b94a5289ed8c8c681484b4",
+  "created_at": "2026-10-30T08:54:05.110992+00:00",
+  "model": "deepseek-flash",
+  "original": [
+    "Explain what AI can and cannot do in software, and follow safe practices for confidential data",
+    "Design an AI agent for a software workflow with defined tools, stop rules and human approval",
+    "Connect a language model to a software task and measure how often its answers are correct",
+    "Build an AI assistant that answers questions from approved software documents and shows where each answer came from",
+    "Draft replies to customer enquiries with AI, and decide when a case must go to a person"
+  ],
+  "attempts": [
+    {
+      "proposed": [
+        "Explain what AI can and cannot do in software, and follow safe practices for confidential data",
+        "Design an AI agent for a software workflow with defined tools, stop rules and human approval",
+        "Connect a language model to a software task and measure how often its answers are correct",
+        "Build an AI assistant that answers questions from approved software documents and shows where each answer came from",
+        "Draft replies to customer enquiries with AI, and decide when a case must go to a person"
+      ],
+      "problems": []
+    }
+  ],
+  "status": "accepted",
+  "objectives": [
+    "Explain what AI can and cannot do in software, and follow safe practices for confidential data",
+    "Design an AI agent for a software workflow with defined tools, stop rules and human approval",
+    "Connect a language model to a software task and measure how often its answers are correct",
+    "Build an AI assistant that answers questions from approved software documents and shows where each answer came from",
+    "Draft replies to customer enquiries with AI, and decide when a case must go to a person"
+  ],
+  "cost_upper_usd": 0.00022319999999999998
+}

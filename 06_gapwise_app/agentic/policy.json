@@ -1,0 +1,11 @@
+{
+  "version": "six-rules-v1",
+  "minimum_ai_postings": 25,
+  "minimum_explicit_support_share": 0.2,
+  "maximum_matching_course_share": 0.1,
+  "minimum_sector_depth_share": 0.05,
+  "minimum_mean_positive_skill_gap": 0.005,
+  "maximum_competitor_lexical_similarity": 0.95,
+  "minimum_business_need_characters": 15,
+  "explanation": "Fixed decision-support heuristics, not validated commercial success thresholds. Supply uses catalogue entries mentioning at least two proposed skills, not enrolment or teaching capacity. Explicit support uses the identified evidence screen, not independently verified truth."
+}

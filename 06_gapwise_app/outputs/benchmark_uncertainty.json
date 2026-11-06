@@ -1,0 +1,57 @@
+{
+  "n": 400,
+  "replicates": 2000,
+  "method": "paired bootstrap within original sampling strata",
+  "metrics_order": [
+    "precision",
+    "recall",
+    "f1"
+  ],
+  "dictionary_point": [
+    0.5430895741556535,
+    0.24534868139114335,
+    0.33800062328015357
+  ],
+  "student_point": [
+    0.6333817994455806,
+    0.47624288354554994,
+    0.5436857690297857
+  ],
+  "dictionary_95_percentile_interval": [
+    [
+      0.4889979074889868,
+      0.17577273945632357,
+      0.2629727853870992
+    ],
+    [
+      0.5987363803230543,
+      0.39580833655300535,
+      0.4588002664149186
+    ]
+  ],
+  "student_95_percentile_interval": [
+    [
+      0.41237315807541003,
+      0.2907199032463887,
+      0.3536452599632079
+    ],
+    [
+      0.8632596527847715,
+      0.7044590836127245,
+      0.7169868141490606
+    ]
+  ],
+  "paired_difference_95_percentile_interval": [
+    [
+      -0.1397108507706694,
+      -0.0006679552097801746,
+      -0.021896839980126735
+    ],
+    [
+      0.32428945746231347,
+      0.44313621972463,
+      0.38452170108301353
+    ]
+  ],
+  "warning": "Conditional on the existing one-reviewer labels and reused benchmark; not uncertainty over label truth or an independent final test."
+}
